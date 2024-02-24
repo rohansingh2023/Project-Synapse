@@ -1,4 +1,5 @@
 import homeLogo from "../assets/images/home_logo.png";
+import { ProjectTable } from "../components";
 
 export default function Home() {
   return (
@@ -45,7 +46,7 @@ export default function Home() {
       </div>
 
       {/* ProjectList */}
-      <div></div>
+      <ProjectTable />
     </div>
   );
 }
