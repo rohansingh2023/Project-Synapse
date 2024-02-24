@@ -1,0 +1,24 @@
+[
+    {
+        "Group No.":1,
+        "Project Title":"Poshan Sankalp",
+        "Team Members":"Rohan Singh, Surya Ganiga",
+        "Guide":"Dr. Anjali Yeole",
+        "Co-guide":"Anyone",
+        "Project Description (300-700 words)":"Test Description",
+        "GitHub Link":"https:\/\/github.com",
+        "Demo Video Link":"https:\/\/github.com",
+        "Project Domain":"HealthCare"
+    },
+    {
+        "Group No.":2,
+        "Project Title":"AI in Music",
+        "Team Members":"Tejas Patne, Akshat Tiwari",
+        "Guide":"Sangeeta Mam",
+        "Co-guide":"Anyone",
+        "Project Description (300-700 words)":"Test Description",
+        "GitHub Link":"https:\/\/github.com",
+        "Demo Video Link":"https:\/\/github.com",
+        "Project Domain":"Music"
+    }
+]
