@@ -10,7 +10,7 @@ export const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route path="" element={<Home />} />
-      <Route path="project" element={<Project />} />
+      <Route path="project/:projectId" element={<Project />} />
     </Route>
   )
 );
