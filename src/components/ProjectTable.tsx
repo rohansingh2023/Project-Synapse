@@ -10,7 +10,7 @@ export default function ProjectTable() {
       <div className="flex items-center justify-between">
         <h1 className="text-4xl font-bold">Project List</h1>
         <div className="flex text-slate-500 rounded-full w-36 py-1 px-4 bg-[#FFFFFF]">
-          <select className="outline-none w-full" value={["2023-24"]}>
+          <select className="outline-none w-full" value={"2023-24"}>
             <option value="2023-24">2023-24</option>
           </select>
         </div>

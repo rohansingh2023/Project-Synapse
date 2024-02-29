@@ -2,7 +2,7 @@ import navbarLogo from "../assets/images/navbar_logo.jpg";
 
 export default function Navbar() {
   return (
-    <div className="bg-white flex items-center justify-between py-2 px-10 shadow-lg">
+    <div className="bg-white flex items-center justify-between py-2 px-10 shadow-lg fixed top-0 left-0 right-0 z-10">
       {/* Logo */}
       <div>
         <img src={navbarLogo} alt="" className="h-[44.4px] w-[181.2px]" />
