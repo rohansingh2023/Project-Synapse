@@ -23,7 +23,28 @@ function excelToJson(excelFile, jsonFile) {
     const jsonData = XLSX.utils.sheet_to_json(worksheet, {
         raw: true,
         header: 2, // Use the first row as headers
-        blankrows: false // Skip blank rows
+        defval: null, // Treat blank cells as null values
+        blankrows: false, // Skip blank rows
+    });
+
+    // Filter out rows where all column values are null
+    const nonEmptyRows = jsonData.filter(row => {
+        return !Object.keys(row).every(key => {
+            return key === "__EMPTY" || row[key] === null || row[key] === undefined || row[key] === '';
+        });
+    });
+
+    // Identify non-empty columns
+    const nonEmptyColumns = new Set();
+    nonEmptyRows.forEach(row => Object.keys(row).forEach(column => row[column] !== null && nonEmptyColumns.add(column)));
+
+    // Generate JSON data with non-empty columns
+    const jsonDataWithNonEmptyColumns = nonEmptyRows.map(row => {
+        const newRow = {};
+        nonEmptyColumns.forEach(column => {
+            newRow[column] = row[column];
+        });
+        return newRow;
     });
 
     // Ensure the directory exists
@@ -33,7 +54,7 @@ function excelToJson(excelFile, jsonFile) {
     }
 
     // Write JSON to file
-    fs.writeFileSync(jsonFile, JSON.stringify(jsonData, null, 4));
+    fs.writeFileSync(jsonFile, JSON.stringify(jsonDataWithNonEmptyColumns, null, 4));
 }
 
 // Usage
