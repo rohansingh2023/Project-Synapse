@@ -12,7 +12,7 @@ export default function Team({ team }: {team: string[]}) {
         <div className="flex flex-col md:flex-row md:flex-wrap justify-between items-center gap-5">
           {
             team.map((member, index) => {
-              if(index > 1){
+              if(index > 1 && !!member){
                 return <Person key={member} name={member} />
               }
             })
