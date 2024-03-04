@@ -21,7 +21,7 @@ export default function ProjectListRow({ celltype, project }: { celltype: String
 
           <div>
             <div className="flex text-start items-start space-x-8">
-              <p className="w-[15vw] line-clamp-1">{project.domain || "unspecified"}</p>
+              <p className="w-[15vw] line-clamp-1">{project.domain || "___"}</p>
               <p className="w-[15vw] line-clamp-1">{project.guide || "unknown"}</p>
             </div>
             </div>
