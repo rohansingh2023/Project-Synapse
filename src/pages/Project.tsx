@@ -62,7 +62,7 @@ export default function Project() {
   return (
     <div className="flex flex-col justify-between p-6 md:p-14 md:gap-10 md:flex-row">
       <div className="flex flex-col gap-8">
-        <h2 className="text-3xl font-bold text-left">{(projectInfo && projectInfo["Project Title"]) || "BE Project"}</h2>
+        <h2 className="text-xl md:text-3xl font-bold text-left">{(projectInfo && projectInfo["Project Title"]) || "BE Project"}</h2>
         <div className="flex flex-col text-left opacity-60 gap-4">
           <p>
             {(projectInfo && projectInfo["Project Description"]) || "We apologize for any inconvenience, but the project description is currently unavailable. Rest assured, we are actively working to update this page with comprehensive details. Thank you for your understanding and patience."}

@@ -6,11 +6,11 @@ export default function ProjectTable() {
   
 
   return (
-    <div className="mt-36 px-14">
+    <div className="mt-36 px-2 md:px-14">
 
       <div className="flex items-center justify-between">
-        <h1 className="text-4xl font-bold">Project List</h1>
-        <div className="flex text-slate-500 rounded-full w-36 py-1 px-4 bg-[#FFFFFF]">
+        <h1 className="text-2xl md:text-4xl font-bold">Project List</h1>
+        <div className="flex text-slate-500 text-sm md:text-base md:px-4 py-1 rounded-full md:w-36 px-2 bg-[#FFFFFF]">
           <select className="outline-none w-full" value={"2023-24"}>
             <option value="2023-24">2023-24</option>
           </select>
