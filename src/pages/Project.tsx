@@ -1,15 +1,15 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { Team } from "../components";
-import data from "../data/output.json";
+import data from "../db/output.json";
 import { useEffect } from "react";
 
 interface ProjectInfo {
   "Group No.": number;
   "Project Title": string;
-  "Team Members": string;
+  "Team Members": string[];
   "Guide": string;
   "Co-guide": string; // Optional property
-  "Project Description (300-700 words)": string;
+  "Project Description": string;
   "GitHub Link": string;
   "Demo Video Link": string;
   "Project Domain": string;
@@ -18,7 +18,7 @@ interface ProjectInfo {
 export default function Project() {
   const { projectId } = useParams();
   const navigate = useNavigate();
-  const projectData  = data.find((project) => project["Group No."].toString() === projectId);
+  const projectData  = data.find((project) => project["A"].toString() === projectId);
   let projectInfo: ProjectInfo;
   useEffect(() => {
     if(projectInfo === undefined) {
@@ -28,20 +28,29 @@ export default function Project() {
   }, [])
   projectInfo = {
                   "Group No.":0, 
-                  "Project Title": 
-                  "Project title", 
-                  "Team Members": "Team Members", 
+                  "Project Title": "Project title", 
+                  "Team Members": [], 
                   "Guide": "Guide",
                   "Co-guide": "Co-guide", 
-                  "Project Description (300-700 words)": "Project Description (300-700 words)", 
+                  "Project Description": "Project Description (300-700 words)", 
                   "GitHub Link": "GitHub Link", 
-                  "Demo Video Link": "Demo Video Link", 
+                  "Demo Video Link": "", 
                   "Project Domain":"Project Domain"
                 };
-  if(projectData !== undefined) projectInfo = projectData;
+  if(projectData !== undefined) projectInfo = {
+    "Group No.": projectData["A"] as number,
+    "Project Title": projectData["B"],
+    "Team Members": [projectData["C"], projectData["D"], projectData["E"], projectData["F"] as string], 
+    "Guide": projectData["G"],
+    "Co-guide": projectData["H"], 
+    "Project Description": projectData["I"] as string, 
+    "GitHub Link": projectData["J"] as string, 
+    "Demo Video Link": projectData["K"] as string, 
+    "Project Domain":projectData["L"] as string
+  };
   let teamInfo: string[] = ["temp"];
   const teamMentors = [projectInfo?.['Guide'], projectInfo?.["Co-guide"]];
-  const teamMembers = projectInfo["Team Members"].split(',');
+  const teamMembers = projectInfo["Team Members"];
   if(teamMentors !== undefined){
     teamInfo.pop();
     teamInfo.push(...teamMentors);
@@ -53,22 +62,16 @@ export default function Project() {
   return (
     <div className="flex flex-col justify-between p-6 md:p-14 md:gap-10 md:flex-row">
       <div className="flex flex-col gap-8">
-        <h2 className="text-3xl font-bold text-left">{(projectInfo && projectInfo["Project Title"]) || "BE Project"}</h2>
+        <h2 className="text-xl md:text-3xl font-bold text-left">{(projectInfo && projectInfo["Project Title"]) || "BE Project"}</h2>
         <div className="flex flex-col text-left opacity-60 gap-4">
           <p>
-            {(projectInfo && projectInfo["Project Description (300-700 words)"]) || "Project Description"}
-          </p>
-          <p>
-            {(projectInfo && projectInfo["Project Description (300-700 words)"]) || "Project Description"}
-          </p>
-          <p>
-            {(projectInfo && projectInfo["Project Description (300-700 words)"]) || "Project Description"}
+            {(projectInfo && projectInfo["Project Description"]) || "We apologize for any inconvenience, but the project description is currently unavailable. Rest assured, we are actively working to update this page with comprehensive details. Thank you for your understanding and patience."}
           </p>
         </div>
         <div>
           <iframe
-            className="w-full h-[300px] md:min-h-[450px]"
-            src={(projectInfo && projectInfo["Demo Video Link"]) || "https://www.youtube.com/embed/WPl10ZrhCtk?si=dkPXWysF-RYY7BRR"}
+            className={`w-full h-[300px] md:min-h-[450px] ${!projectInfo["Demo Video Link"] && "hidden"}`}
+            src={(projectInfo && projectInfo["Demo Video Link"]) || "https://www.youtube.com/embed/"}
             title="video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

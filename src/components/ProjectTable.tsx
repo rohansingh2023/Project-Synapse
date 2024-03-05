@@ -1,15 +1,16 @@
 import ProjectListRow from "./ProjectListRow";
-import data from '../data/output.json'
+import data from '../db/output.json'
 
 export default function ProjectTable() {
   // const [value ,setValue] = useState<boolean>(true)
+  
 
   return (
-    <div className="mt-36 px-14">
+    <div className="mt-36 px-2 md:px-14">
 
       <div className="flex items-center justify-between">
-        <h1 className="text-4xl font-bold">Project List</h1>
-        <div className="flex text-slate-500 rounded-full w-36 py-1 px-4 bg-[#FFFFFF]">
+        <h1 className="text-2xl md:text-4xl font-bold">Project List</h1>
+        <div className="flex text-slate-500 text-sm md:text-base md:px-4 py-1 rounded-full md:w-36 px-2 bg-[#FFFFFF]">
           <select className="outline-none w-full" value={"2023-24"}>
             <option value="2023-24">2023-24</option>
           </select>
@@ -27,17 +28,20 @@ export default function ProjectTable() {
         <ProjectListRow celltype="" project={{index:4, title:"project 1", domain:"", guide:"guide"}} />
         <ProjectListRow celltype="" project={{index:5, title:"project 1", domain:"domain", guide:""}} />
         <ProjectListRow celltype="" project={{index:7, title:"project 1", domain:"domain", guide:"guide"}} /> */}
-        {data.map((project) => (
-          <ProjectListRow 
-            key={project["Group No."]} 
-            celltype="" 
-            project={
-              {
-                index: project["Group No."], 
-                title: project["Project Title"], 
-                domain: project["Project Domain"], 
-                guide:project["Guide"]}} />
-        ))}
+        {data.map((project, index) => {
+          if(index!==0)
+            return (
+              <ProjectListRow 
+                key={project["A"]} 
+                celltype="" 
+                project={
+                  {
+                    index: project["A"] as number, 
+                    title: project["B"], 
+                    domain: project["L"] as string, 
+                    guide:project["G"]}} />
+            )
+        } )}
       </div>
 
     </div>
