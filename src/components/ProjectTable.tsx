@@ -1,13 +1,22 @@
 import ProjectListRow from "./ProjectListRow";
-import data from '../db/output.json'
+import data from "../db/output.json";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function ProjectTable() {
-  // const [value ,setValue] = useState<boolean>(true)
-  
+  const [selectedOption, setSelectedOption] = useState<string>("");
+
+  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedOption(e.target.value);
+  };
+
+  const testData =
+    selectedOption === ""
+      ? data
+      : data?.filter((i) => i["L"]?.includes(selectedOption));
 
   return (
     <div className="mt-36 px-2 md:px-14">
-
       <div className="flex items-center justify-between">
         <h1 className="text-2xl md:text-4xl font-bold">Project List</h1>
         <div className="flex text-slate-500 text-sm md:text-base md:px-4 py-1 rounded-full md:w-36 px-2 bg-[#FFFFFF]">
@@ -18,32 +27,63 @@ export default function ProjectTable() {
       </div>
 
       <div className="mt-8">
-        <ProjectListRow celltype="heading" project={{index:0, title:"Project Title", domain:"Domain", guide:"Guide"}} />
+        <div>
+          <Link to={`/`}>
+            <div
+              className={`flex items-start justify-start space-x-8 bg-[#FFFFFF] font-semibold py-1 cursor-default
+            px-5 rounded-sm`}
+            >
+              <div>
+                <div
+                  className={`flex justify-start w-[50vw] items-start space-x-8 font-semibold`}
+                >
+                  <p>#</p>
+                  <p className="line-clamp-1">Project Title</p>
+                </div>
+              </div>
+
+              <div>
+                <div className="flex text-start items-start space-x-8">
+                  <select
+                    name=""
+                    id=""
+                    value={selectedOption}
+                    onChange={handleChange}
+                  >
+                    <option value="" selected disabled>
+                      Domain
+                    </option>
+                    <option value="Deep Learning">Deep Learning</option>
+                    <option value="NLP">NLP</option>
+                    <option value="Computer Vision">Computer Vision</option>
+                    <option value="Predictive maintenance">
+                      Predictive Maintenance
+                    </option>
+                  </select>
+                  <p className="w-[15vw] line-clamp-1">Guide</p>
+                </div>
+              </div>
+            </div>
+          </Link>
+        </div>
       </div>
 
       <div className="mt-3 space-y-2">
-        {/* <ProjectListRow celltype="" project={{index:1, title:"project 1", domain:"domain domain domain domain domain domain domain", guide:"guide guide guide guide"}} />
-        <ProjectListRow celltype="" project={{index:2, title:"project 2 project 2 project 2 project 2 project 2 project 2 project 2 project 2 project 2 project 2", domain:"domain", guide:"guide"}} />
-        <ProjectListRow celltype="" project={{index:3, title:"", domain:"domain", guide:"guide"}} />
-        <ProjectListRow celltype="" project={{index:4, title:"project 1", domain:"", guide:"guide"}} />
-        <ProjectListRow celltype="" project={{index:5, title:"project 1", domain:"domain", guide:""}} />
-        <ProjectListRow celltype="" project={{index:7, title:"project 1", domain:"domain", guide:"guide"}} /> */}
-        {data.map((project, index) => {
-          if(index!==0)
+        {testData.map((project) => {
+          if (project["L"] !== "domain")
             return (
-              <ProjectListRow 
-                key={project["A"]} 
-                celltype="" 
-                project={
-                  {
-                    index: project["A"] as number, 
-                    title: project["B"], 
-                    domain: project["L"] as string, 
-                    guide:project["G"]}} />
-            )
-        } )}
+              <ProjectListRow
+                key={project["A"]}
+                project={{
+                  index: project["A"] as number,
+                  title: project["B"],
+                  domain: project["L"] as string,
+                  guide: project["G"],
+                }}
+              />
+            );
+        })}
       </div>
-
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import navbarLogo from "../assets/images/navbar_logo.jpg";
 
 export default function Navbar() {
@@ -5,7 +6,13 @@ export default function Navbar() {
     <div className="bg-white flex items-center justify-between py-2 px-2 shadow-lg fixed top-0 left-0 right-0 z-10 md:px-10">
       {/* Logo */}
       <div>
-        <img src={navbarLogo} alt="VESIT" className="text-3xl font-extrabold text-yellow-400 h-10 w-36 md:h-[44.4px] md:w-[181.2px]" />
+        <Link to={"/"}>
+          <img
+            src={navbarLogo}
+            alt="VESIT"
+            className="text-3xl font-extrabold text-yellow-400 h-10 w-36 md:h-[44.4px] md:w-[181.2px]"
+          />
+        </Link>
       </div>
 
       {/* Search */}
