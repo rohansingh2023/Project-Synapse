@@ -17,7 +17,7 @@ export default function ProjectListRow({ project }: { project: ProjectProps }) {
         >
           <div>
             <div
-              className={`flex justify-start w-[50vw] items-start space-x-8`}
+              className={`flex text-start justify-start w-[50vw] items-start space-x-8`}
             >
               <p>{project.index}</p>
               <p className="line-clamp-1">
@@ -31,7 +31,7 @@ export default function ProjectListRow({ project }: { project: ProjectProps }) {
               <p className="w-[15vw] line-clamp-1">
                 {project.domain || "_ _ _ _"}
               </p>
-              <p className="w-[15vw] line-clamp-1">
+              <p className="w-[15vw] line-clamp-1 hidden md:contents">
                 {project.guide || "unknown"}
               </p>
             </div>

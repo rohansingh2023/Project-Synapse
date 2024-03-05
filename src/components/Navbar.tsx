@@ -16,7 +16,7 @@ export default function Navbar() {
       </div>
 
       {/* Search */}
-      <div>
+      <div className="hidden">
         <input
           type="text"
           placeholder="Search..."

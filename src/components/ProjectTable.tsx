@@ -49,10 +49,12 @@ export default function ProjectTable() {
                     id=""
                     value={selectedOption}
                     onChange={handleChange}
+                    className="w-20 md:w-full"
                   >
                     <option value="" selected disabled>
                       Domain
                     </option>
+                    <option value="">All</option>
                     <option value="Deep Learning">Deep Learning</option>
                     <option value="NLP">NLP</option>
                     <option value="Computer Vision">Computer Vision</option>
@@ -60,7 +62,7 @@ export default function ProjectTable() {
                       Predictive Maintenance
                     </option>
                   </select>
-                  <p className="w-[15vw] line-clamp-1">Guide</p>
+                  <p className="w-[15vw] line-clamp-1 hidden md:contents">Guide</p>
                 </div>
               </div>
             </div>
