@@ -1,27 +1,82 @@
 import { Link } from "react-router-dom";
-import navbarLogo from "../assets/images/navbar_logo.jpg";
+import homeLogo from "../assets/images/home_logo.png";
+import data from "../db/output.json";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [searchResult, setSearchResult] = useState([]);
+  
+  // Function to perform the actual search
+  const performSearch = (term: any) => {
+    // Filter the data based on the search term
+    let results: any;
+    if(term!=="" && term.length >= 3){
+      results = data?.filter(item => {
+        if(item["B"].toLowerCase() !== "title")
+          return item["B"].toLowerCase().includes(term.toLowerCase())
+      }
+        
+      );
+    } else {
+      results = []
+    }
+    setSearchResult(results);
+  };
+
+  // Debounce function to delay the execution of search
+  const debounce = (func: (...args: any[]) => void, delay: number) => {
+    let timeoutId: ReturnType<typeof setTimeout>;;
+    return function (this: any, ...args: any[]) {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        func.apply(this, args);
+      }, delay);
+    };
+  };
+
+  // Debounced version of the search function
+  const debouncedSearch = debounce(performSearch, 500);
+
+  // Event handler for input change
+  const handleSearchTerm = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { value } = e.target;
+    debouncedSearch(value);
+  };
+
   return (
-    <div className="bg-white flex items-center justify-between py-2 px-2 shadow-lg fixed top-0 left-0 right-0 z-10 md:px-10">
+    <div className="bg-white flex items-center justify-between py-0 px-2 shadow-lg fixed top-0 left-0 right-0 z-10 md:px-10">
       {/* Logo */}
-      <div>
+      <div className="flex-1">
         <Link to={"/"}>
           <img
-            src={navbarLogo}
+            src={homeLogo}
             alt="VESIT"
-            className="text-3xl font-extrabold text-yellow-400 h-10 w-36 md:h-[44.4px] md:w-[181.2px]"
+            className="text-3xl font-extrabold text-yellow-400 h-14"
           />
         </Link>
       </div>
 
+      {/* Info */}
+      <div className="hidden md:contents">
+        <div className="text-sm md:text-base flex-1">
+          <div className="text-xs md:text-sm">Department of Artificial Intelligence & Data Science</div>
+          <div className="font-bold text-xl text-blue-500">Project Prakalpa</div>
+        </div>
+      </div>
+
       {/* Search */}
-      <div className="hidden">
-        <input
-          type="text"
-          placeholder="Search..."
-          className="bg-[#E0E7FF] md:px-5 py-2 px-2 rounded-full hover:opacity-80 active: outline-none placeholder:text-black opacity-60"
-        />
+      <div className="flex-1 text-right">
+        <input onChange={handleSearchTerm} type="text" className="bg-[#E0E7FF] w-32 rounded-full h-8 px-4 py-5 mr-4 outline-none opacity-60" placeholder="Search..." />
+      </div>
+
+      <div className="absolute right-0 top-14 m-4 z-10 bg-white rounded-md">
+        {/* Display search results */}
+        {searchResult.map((item, index) => (
+          <Link to={`/project/${item["A"]}`} key={index} onClick={() => debouncedSearch("")}>
+            <p className="line-clamp-1 p-2 w-full">{item["B"]}</p>
+            <div className="w-full h-[0.5px] bg-slate-500"></div>
+          </Link>
+        ))}
       </div>
     </div>
   );

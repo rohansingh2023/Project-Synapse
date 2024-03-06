@@ -8,8 +8,8 @@ export default function Home() {
     <div>
       {/* Info */}
       <div className="flex flex-col items-center justify-center gap-10">
-        <div className="flex flex-col items-center justify-center gap-8 p-10 mt-10">
-          <img src={homeLogo} alt="" className="w-[20vh]" />
+        <div className="flex flex-col items-center justify-center gap-8 p-10 mt-5">
+          <img src={homeLogo} alt="" className="w-[36vh]" />
           <div className="text-3xl md:text-5xl font-bold">
             <p>Vivekanand Education Society's</p>
             <p>Institute of Technology</p>
