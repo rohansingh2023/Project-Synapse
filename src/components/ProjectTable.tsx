@@ -19,18 +19,18 @@ export default function ProjectTable() {
     <div className="mt-36 px-2 md:px-14">
       <div className="flex items-center justify-between">
         <h1 className="text-2xl md:text-4xl font-bold">Project List</h1>
-        <div className="flex text-slate-500 text-sm md:text-base md:px-4 py-1 rounded-full md:w-36 px-2 bg-[#FFFFFF]">
-          <select className="outline-none w-full" value={"2023-24"} onChange={()=> {}}>
+        <div className="flex text-slate-500 bg-slate-100 text-sm md:text-base md:px-4 py-1 rounded-full md:w-36 px-2">
+          <select className="outline-none w-full bg-slate-100" value={"2023-24"} onChange={()=> {}}>
             <option value="2023-24">2023-24</option>
           </select>
         </div>
       </div>
 
-      <div className="mt-8">
+      <div className="mt-8 bg-slate-100">
         <div>
           <Link to={`/`}>
             <div
-              className={`flex items-start justify-start space-x-8 bg-[#FFFFFF] font-semibold py-1 cursor-default
+              className={`flex items-start justify-start space-x-8 font-semibold py-1 cursor-default
             px-5 rounded-sm`}
             >
               <div>
@@ -49,7 +49,7 @@ export default function ProjectTable() {
                     id=""
                     value={selectedOption}
                     onChange={handleChange}
-                    className="w-20 md:w-full"
+                    className="w-20 md:w-full bg-slate-100"
                   >
                     <option value="">Domain</option>
                     <option value="Deep Learning">Deep Learning</option>

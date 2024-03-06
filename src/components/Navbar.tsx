@@ -44,14 +44,14 @@ export default function Navbar() {
   };
 
   return (
-    <div className="bg-white flex items-center justify-between py-0 px-2 shadow-lg fixed top-0 left-0 right-0 z-10 md:px-10">
+    <div className="bg-slate-500 text-white flex items-center justify-between py-0 px-2 shadow-lg fixed top-0 left-0 right-0 z-10 md:px-10">
       {/* Logo */}
       <div className="flex-1">
         <Link to={"/"}>
           <img
             src={homeLogo}
             alt="VESIT"
-            className="text-3xl font-extrabold text-yellow-400 h-14"
+            className="text-3xl font-extrabold h-14"
           />
         </Link>
       </div>
@@ -60,16 +60,16 @@ export default function Navbar() {
       <div className="hidden md:contents">
         <div className="text-sm md:text-base flex-1">
           <div className="text-xs md:text-sm">Department of Artificial Intelligence & Data Science</div>
-          <div className="font-bold text-xl text-blue-500">Project Prakalpa</div>
+          <div className="font-bold text-xl text-yellow-400">Ai 🤖 Repo</div>
         </div>
       </div>
 
       {/* Search */}
       <div className="flex-1 text-right">
-        <input onChange={handleSearchTerm} type="text" className="bg-[#E0E7FF] w-32 rounded-full h-8 px-4 py-5 mr-4 outline-none opacity-60" placeholder="Search..." />
+        <input onChange={handleSearchTerm} type="text" className="bg-slate-400 placeholder:text-white w-32 rounded-full h-8 px-4 py-5 mr-4 outline-none" placeholder="Search..." />
       </div>
 
-      <div className="absolute right-0 top-14 m-4 z-10 bg-white rounded-md">
+      <div className="absolute right-0 top-14 m-4 z-10 bg-slate-400 rounded-md">
         {/* Display search results */}
         {searchResult.map((item, index) => (
           <Link to={`/project/${item["A"]}`} key={index} onClick={() => debouncedSearch("")}>

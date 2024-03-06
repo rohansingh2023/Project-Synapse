@@ -9,8 +9,9 @@ export default function Home() {
       {/* Info */}
       <div className="flex flex-col items-center justify-center gap-10">
         <div className="flex flex-col items-center justify-center gap-8 p-10 mt-5">
+          <p className="text-xl text-red-800 md:text-3xl font-semibold italic">Department of Artificial Intelligence & Data Science</p>
           <img src={homeLogo} alt="" className="w-[36vh]" />
-          <div className="text-3xl md:text-5xl font-bold">
+          <div className="text-3xl text-yellow-500 md:text-5xl font-bold">
             <p>Vivekanand Education Society's</p>
             <p>Institute of Technology</p>
           </div>
@@ -18,22 +19,21 @@ export default function Home() {
           <div className="text-lg md:text-2xl font-semibold opacity-60">
             <p>
               An 
-              <span className="opacity-100 bg-gradient-to-r text-transparent bg-clip-text from-blue-700 via-indigo-500 to-purple-700"> Automomous Institute </span>
+              <span> Automomous Institute </span>
               Affiliated to University of Mumbai, Approved by
             </p>
             <p>AICTE & Recognized by Govt. of Maharashtra</p>
           </div>
         </div>
 
-        <div className="w-[150px] border-[3px] border-[#FFFFFF] rounded-lg"></div>
+        <div className="w-[100px] border-[3px] border-slate-300 rounded-lg"></div>
 
         <div className="flex flex-col items-center justify-center gap-8 p-10">
-          <p className="text-xl md:text-3xl font-semibold italic opacity-70">Department of Artificial Intelligence & Data Science</p>
           <div className="leading-6">
-            <p className="font-bold pb-4 text-3xl md:text-5xl bg-gradient-to-r from-[#1D4EFE] to-[#1A8DF7] inline-block text-transparent bg-clip-text">
-              Project Prakalpa
+            <p className="font-bold pb-4 text-3xl md:text-5xl bg-gradient-to-r text-yellow-500 inline-block text-transparent bg-clip-text">
+              Ai🤖Repo
             </p>
-            <p className="opacity-60 text-sm font-medium">BE Major Projects, Academic Year 2023-34</p>
+            <p className="opacity-80 font-medium text-red-800">BE Major Projects, Academic Year 2023-34</p>
           </div>
         </div>
 

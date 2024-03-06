@@ -12,7 +12,7 @@ export default function ProjectListRow({ project }: { project: ProjectProps }) {
     <div>
       <Link to={`/project/${project.index}`}>
         <div
-          className={`flex items-start justify-start space-x-8 bg-[#FFFFFF] py-2 text-slate-500
+          className={`flex items-start justify-start space-x-8 bg-slate-100 py-2 text-slate-500
             px-5 rounded-sm`}
         >
           <div>
