@@ -1,9 +1,9 @@
 {
-  "homepage": "https://rohansingh2023.github.io/Project-Synapse/",
   "name": "client",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://rohansingh2023.github.io/Project-Synapse/",
   "scripts": {
     "predeploy" : "npm run build",
     "deploy" : "gh-pages -d dist",
