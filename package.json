@@ -10,8 +10,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "node src/scripts/excelToJson.js && vite preview",
     "convert": "node src/utils/file-conversion/convert.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist"
   },
   "dependencies": {
     "@types/validator": "^13.11.9",
