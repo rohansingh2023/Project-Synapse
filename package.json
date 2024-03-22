@@ -1,4 +1,5 @@
 {
+  "homepage": "https://rohansingh2023.github.io/BE-Projects-Showcase/",
   "name": "client",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +9,9 @@
     "build": "node src/scripts/excelToJson.js && tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "node src/scripts/excelToJson.js && vite preview",
-    "convert": "node src/utils/file-conversion/convert.js"
+    "convert": "node src/utils/file-conversion/convert.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@types/validator": "^13.11.9",
@@ -35,6 +38,7 @@
     "eslint": "^8.56.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.2.2",
