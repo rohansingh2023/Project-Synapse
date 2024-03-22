@@ -31,7 +31,7 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center gap-8 p-10">
           <div className="leading-6">
             <p className="font-bold pb-4 text-3xl md:text-5xl bg-gradient-to-r text-yellow-500 inline-block text-transparent bg-clip-text">
-              Ai🤖Repo
+              Project Synapse
             </p>
             <p className="opacity-80 font-medium text-red-800">BE Major Projects, Academic Year 2023-34</p>
           </div>

@@ -60,7 +60,7 @@ export default function Navbar() {
       <div className="hidden md:contents">
         <div className="text-sm md:text-base flex-1">
           <div className="text-xs md:text-sm">Department of Artificial Intelligence & Data Science</div>
-          <div className="font-bold text-xl text-yellow-400">Ai 🤖 Repo</div>
+          <div className="font-bold text-xl text-yellow-400">Project Synapse</div>
         </div>
       </div>
 

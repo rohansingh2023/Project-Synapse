@@ -15,7 +15,12 @@
         "L": "domain",
         "M": "Research Paper Doc",
         "N": "Fundings Received",
-        "O": "Photo Link"
+        "O": "member1 photo",
+        "P": "member2 photo",
+        "Q": "member3 photo",
+        "R": "member4 photo",
+        "S": "guide photo",
+        "T": "coguide photo"
     },
     {
         "__EMPTY": 2,
@@ -27,13 +32,18 @@
         "F": "Lakshman Bhojwani",
         "G": "Dr. Vijayalaxmi",
         "H": "Mamata C",
-        "I": null,
-        "J": null,
+        "I": "The project, titled \"Detecting Cyberbullying using Deep Learning,\" aims to investigate cyber aggression on Twitter, focusing on identifying derogatory tweets based on gender, race, or sexual orientation. It seeks to develop an automated system capable of accurately analyzing text-based content across online platforms to detect instances of cyberbullying.\n\nLeveraging a dataset of approximately 110,000 instances, the study explores various detection methods, including non-deep learning approaches such as SVM, L2 regularization, and random forest, as well as deep learning techniques utilizing BERT. Additionally, an ensemble learning approach combining BERT and LSTM is planned.\n\nThe classification system categorizes tweets into six major categories: gender, age, religion, not cyberbullying, and ethnicity. To evaluate the effectiveness of these methods, a test dataset of 20,000 tweets will be employed, facilitating a comparative analysis to determine which model best identifies and classifies cyberbullying tweets accurately.",
+        "J": "https://github.com/Tydos/Cyberbullying-Detection/tree/main",
         "K": null,
         "L": "Deep Learning",
         "M": null,
         "N": null,
-        "O": null
+        "O": "Prasad Jawale",
+        "P": "Anushka Kulkarni",
+        "Q": "subrato_tapaswi.jpeg",
+        "R": "Lakshman Bhojwani",
+        "S": "Dr. Vijayalaxmi",
+        "T": "Mamata C"
     },
     {
         "__EMPTY": 3,
@@ -45,13 +55,18 @@
         "F": "Yash Sarang",
         "G": "Dr. Anjali Yeole",
         "H": "Himanshi G",
-        "I": null,
-        "J": null,
+        "I": "The project, titled \"SecurGAN: AI-Powered Facial Inpainting for Enhanced Law Enforcement and Security,\" aims to develop a system utilizing AI-powered facial inpainting techniques with Generative Adversarial Neural Networks (GANs). This system reconstructs the facial features of an unknown person who has covered their face, generating an accurate representation based on visible features and contextual information in the image. Its goal is to provide law enforcement agencies with a tool that assists in identifying individuals involved in criminal activities or other security-related incidents where their faces are obscured, enhancing the capabilities of law enforcement personnel in gathering information and solving cases effectively through advanced machine learning algorithms.",
+        "J": "https://github.com/prathmeshppawar/Major-Project",
         "K": null,
-        "L": null,
+        "L": "Computer Vision",
         "M": null,
         "N": null,
-        "O": null
+        "O": "Arunim Chakraborty",
+        "P": "Satyam Dubey",
+        "Q": "Prathmesh Pawar",
+        "R": "Yash Sarang",
+        "S": "Dr. Anjali Yeole",
+        "T": "Himanshi G"
     },
     {
         "__EMPTY": 4,
@@ -63,13 +78,18 @@
         "F": "Hrishikesh Kudale",
         "G": "Sangeeta Oswal",
         "H": "Bhavana C",
-        "I": null,
-        "J": null,
+        "I": "In the vibrant city of Mumbai, where the aroma of freshly brewed coffee fills the air on every street corner, finding the perfect location for a new coffee shop is both a challenge and an opportunity. Businesses like AbCoffee are constantly seeking ways to expand their footprint and capture new markets, but the process of selecting an ideal location can be daunting. Traditional methods of site selection often rely on intuition or anecdotal evidence, leading to suboptimal decisions and potentially costly mistakes.\n\nTo address this challenge, our project undertakes a data-driven approach to spatial analysis, leveraging the power of data science techniques to identify optimal locations for coffee shop expansion in Mumbai. By harnessing comprehensive datasets encompassing cafe locations, real estate pricing, and transportation accessibility, we aim to provide businesses with actionable insights to support strategic decision-making.\n\nThe heart of our approach lies in clustering analysis, specifically employing the Density-Based Spatial Clustering of Applications with Noise (DBSCAN) algorithm. This algorithm allows us to identify clusters of cafes based on geographic proximity, enabling us to understand patterns of cafe distribution across the city. By analyzing the characteristics of these clusters, such as cafe density, variety, and proximity to transportation hubs, we gain valuable insights into the underlying factors driving the success of existing coffee outlets.\n\nMoreover, our analysis extends beyond cafe locations to encompass broader market dynamics, including real estate pricing and transportation accessibility. By integrating data on property prices per square foot across different localities in Mumbai and assessing the proximity of cafe clusters to train stations and other transportation hubs, we gain a comprehensive understanding of the market landscape.\n\nOne of the key advantages of our approach is its scalability and adaptability. While our initial focus is on coffee shop expansion in Mumbai, the methodology and techniques employed can be applied to other cities and regions with minimal modifications. This scalability not only enhances the generalizability of our findings but also allows businesses to replicate our approach in diverse market environments.\n\nThe recommendations generated by our analysis provide businesses like AbCoffee with actionable insights to support their expansion efforts. By identifying potential locations with high business potential and minimal competition, businesses can minimize risks and maximize their chances of success in a competitive market landscape.\n\nIn conclusion, our project represents a powerful application of data science techniques to support strategic decision-making in coffee shop expansion. By harnessing the power of data, we empower businesses to make informed decisions, seize opportunities for growth, and thrive in dynamic market environments.",
+        "J": "https://github.com/akanksha2828/Major-Project/blob/master/abcoffee_prediction.ipynb",
         "K": null,
         "L": null,
         "M": null,
         "N": null,
-        "O": null
+        "O": "Akanksha Singh",
+        "P": "Ashish Gupta",
+        "Q": "Abhijay Sharangdhar",
+        "R": "Hrishikesh Kudale",
+        "S": "Sangeeta Oswal",
+        "T": "Bhavana C"
     },
     {
         "__EMPTY": 5,
@@ -87,7 +107,12 @@
         "L": "NLP",
         "M": null,
         "N": null,
-        "O": null
+        "O": "Siddhant Dongre",
+        "P": "Shubham Hadawle",
+        "Q": "Pranav Kotkar",
+        "R": "Om Bhatia",
+        "S": "Amit Singh",
+        "T": "Akansha P"
     },
     {
         "__EMPTY": 6,
@@ -105,7 +130,12 @@
         "L": null,
         "M": null,
         "N": null,
-        "O": null
+        "O": "Sarthak Bansod",
+        "P": "Sheryl Bellary",
+        "Q": "Sheetal Dixit",
+        "R": "Soham Jadiye",
+        "S": "Ajinkya W",
+        "T": "Kusum K"
     },
     {
         "__EMPTY": 7,
@@ -117,13 +147,18 @@
         "F": "Tejas Patne",
         "G": "Dr. Vijayalaxmi",
         "H": "Mamata C",
-        "I": null,
-        "J": null,
+        "I": "Visual speech recognition using deep learning involves the utilization of neural network architectures to predict speech content solely based on visual cues extracted from videos of speakers. This technology holds significant potential for various applications, including improving speech recognition accuracy in noisy environments, aiding individuals with hearing impairments, enhancing human-computer interaction in multimedia systems, and facilitating automatic transcription of videos. The first step involves preprocessing the video data to extract relevant visual features. This typically involves techniques such as face detection and tracking, lip region segmentation, and feature extraction. Common features include lip movements, facial expressions, and head gestures. LipNet is a deep learning architecture specifically designed for lip reading. It combines convolutional neural networks (CNNs) for feature extraction from lip images with recurrent neural networks (RNNs) such as Long Short-Term Memory (LSTM) networks for sequence modeling and prediction.STCNNs are specialized architectures designed to capture both spatial and temporal information from video data. They typically consist of 3D convolutional layers followed by fully connected layers for classification or prediction tasks. Bi-LSTMs are recurrent neural networks that process input sequences in both forward and backward directions, enabling them to capture temporal dependencies effectively. They are often used for sequence modeling tasks such as speech recognition and natural languageprocessing. Once the architecture is selected, the model is trained using labeled video data, where the input consists of visual features extracted from video frames, and the output is the corresponding speech content. The training process involves optimizing the model parameters to minimize prediction errors using techniques like stochastic gradient descent (SGD) or adaptive optimization algorithms like Adam. After training, the model is evaluated on a separate test set to assess its performance. Common evaluation metrics include accuracy, precision, recall, and F1 score. Additionally, qualitative assessment through visual inspection of predictions can provide insights into the model&#39;s strengths and weaknesses. Once the model is trained and evaluated satisfactorily, it can be deployed for real-world applications. These applications may include real-time speech recognition in videos, automatic transcription of spoken content, enhancing accessibility for individuals with hearing impairments, and integrating with multimedia systems for interactive experiences. Overall, visual speech recognition using deep learning holds promise for advancing the state-of-the-art in speech processing and multimedia technology, with potential benefits across various domains.\n",
+        "J": "https://github.com/TejasPatne/visual-speech-recognition/tree/main",
         "K": null,
         "L": "Computer Vision",
         "M": null,
         "N": null,
-        "O": null
+        "O": "Akshat Tiwari",
+        "P": "Arya Kurup",
+        "Q": "Rupesh Dhirwani",
+        "R": "Tejas Patne",
+        "S": "Dr. Vijayalaxmi",
+        "T": "Mamata C"
     },
     {
         "__EMPTY": 8,
@@ -141,7 +176,12 @@
         "L": "Deep Learning",
         "M": null,
         "N": null,
-        "O": null
+        "O": "Vemburaj Konar",
+        "P": "Mayur Pimpude",
+        "Q": "Heramb Pawar",
+        "R": "Deepak Prasad",
+        "S": "Dr. Anjali Yeole",
+        "T": "Himanshi G"
     },
     {
         "__EMPTY": 9,
@@ -159,7 +199,12 @@
         "L": null,
         "M": null,
         "N": null,
-        "O": null
+        "O": "Tanvi Kate",
+        "P": "Yash pandey",
+        "Q": "Gargi Khachane",
+        "R": "Saransh Badlani",
+        "S": "Sangeeta Oswal",
+        "T": "Bhavana C"
     },
     {
         "__EMPTY": 10,
@@ -177,7 +222,12 @@
         "L": null,
         "M": null,
         "N": null,
-        "O": null
+        "O": "Shruti Devlekar",
+        "P": "Om Gaydhane",
+        "Q": "Janhavi Khanvilkar",
+        "R": "Kshitij Shidore",
+        "S": "Amit Singh",
+        "T": "Akansha P"
     },
     {
         "__EMPTY": 11,
@@ -189,13 +239,18 @@
         "F": "Jayesh Agrawal",
         "G": "Ajinkya W",
         "H": "Kusum K",
-        "I": null,
+        "I": "Supply Chain Management System for Pharmacetiucal companies",
         "J": null,
         "K": null,
-        "L": null,
+        "L": "Supply Chain",
         "M": null,
         "N": null,
-        "O": null
+        "O": "Abhishek Thorat",
+        "P": "Arnav Singhal",
+        "Q": "Manvi Gour",
+        "R": "Jayesh Agrawal",
+        "S": "Ajinkya W",
+        "T": "Kusum K"
     },
     {
         "__EMPTY": 12,
@@ -213,7 +268,12 @@
         "L": "Deep Learning",
         "M": null,
         "N": null,
-        "O": null
+        "O": "Sahil Parab",
+        "P": "Akshiti K.",
+        "Q": "Surabhi Tambe",
+        "R": null,
+        "S": "Dr. Vijayalaxmi",
+        "T": "Mamata C"
     },
     {
         "__EMPTY": 13,
@@ -226,12 +286,17 @@
         "G": "Dr. Anjali Yeole",
         "H": "Himanshi G",
         "I": null,
-        "J": null,
+        "J": "https://github.com/satts27/MajorProject",
         "K": null,
         "L": "Predictive maintenance",
         "M": null,
         "N": null,
-        "O": null
+        "O": "Surya Ganiga",
+        "P": "Nimisha Jain",
+        "Q": "Rohan Singh",
+        "R": null,
+        "S": "Dr. Anjali Yeole",
+        "T": "Himanshi G"
     },
     {
         "__EMPTY": 14,
@@ -249,7 +314,12 @@
         "L": null,
         "M": null,
         "N": null,
-        "O": null
+        "O": "Naresh Shewkani",
+        "P": "Himanshu Sharma",
+        "Q": "Avanish Srivastava",
+        "R": "Shambhu Patil",
+        "S": "Sangeeta Oswal",
+        "T": "Bhavana C"
     },
     {
         "__EMPTY": 15,
@@ -267,7 +337,12 @@
         "L": null,
         "M": null,
         "N": null,
-        "O": null
+        "O": "Nikita Jethani",
+        "P": "Madhusudana Naidu",
+        "Q": "Manav Pahilwani",
+        "R": "Shreya Singh",
+        "S": "Ajinkya W",
+        "T": "Kusum K"
     },
     {
         "__EMPTY": 16,
@@ -279,13 +354,18 @@
         "F": "Parth Suryavanshi",
         "G": "Dr. Anjali Yeole",
         "H": "Himanshi G",
-        "I": null,
+        "I": "Our proposal involves creating a web application that utilises machine sensor data to forecast the likelihood of machine downtime based on the historical data of its servers components . This is going to be carried out by\n1. Carry out data cleaning on the data set that includes records of various parameters gathered by the server&#39;s sensors, and look for correlations to find patterns related to the server&#39;s downtime.\n2. Determine and train the best machine learning model that can predict system failure well in advance using the live data supplied to the corresponding model after analysing the data set and determining the correlation.\n3. In terms of operations, the model will be highly helpful to the person operating the machine, as well as to their individual managers and other stakeholders. The project is expected to yield highly efficient results while also saving a significant amount of time. Profit and productivity as a whole have increased as a result.",
         "J": null,
         "K": null,
-        "L": null,
-        "M": null,
+        "L": "Predictive maintenance",
+        "M": "https://docs.google.com/document/d/12lpMdo29V86HU1lmmGi7EkL6hY55gu-xRR21Spa_JFE/edit?usp=sharing",
         "N": null,
-        "O": null
+        "O": "Harshita Anala",
+        "P": "Mahindra Chetwani",
+        "Q": "Manas Lalwani",
+        "R": "Parth Suryavanshi",
+        "S": "Dr. Anjali Yeole",
+        "T": "Himanshi G"
     },
     {
         "__EMPTY": 17,
@@ -297,13 +377,18 @@
         "F": "Atharva khangar",
         "G": "Sangeeta Oswal",
         "H": "Bhavana C",
-        "I": null,
+        "I": "Project Title: Demystification of Neural Networks through Explainable AI\n\nIntroduction:\nIn recent years, neural networks have demonstrated remarkable capabilities in various fields, ranging from image recognition to natural language processing. However, the complexity and \"black-box\" nature of neural networks often pose challenges in understanding their decision-making processes, hindering their widespread adoption in critical applications. To address this challenge, our project aims to demystify neural networks using Explainable Artificial Intelligence (XAI) techniques.\n\nProject Description:\n\nOur project focuses on creating a transparent understanding of neural networks by leveraging a combination of techniques, including autoencoder architectures, Temporal Convolutional Networks (TCN) for time-series data analysis, SHAP (SHapley Additive exPlanations) for model interpretation, and Natural Language Processing (NLP) for intuitive explanation generation.\n\n1. Autoencoder Setup with TCN:\n\nWe begin by constructing an autoencoder architecture tailored for the specific task of analyzing time-series data with 51 feature attributes. Autoencoders are neural networks trained to reconstruct input data, thus learning a compressed representation of the input. We integrate Temporal Convolutional Networks (TCN) within the autoencoder setup to effectively capture temporal dependencies in the time-series data. TCNs are renowned for their ability to model long-range dependencies efficiently, making them suitable for processing sequential data.\n\n2. SHAP Analysis:\n\nOnce the autoencoder with TCN is trained on the dataset, we employ (SHapley Additive exPlanations) SHAP values to understand the importance of each feature attribute in the model&#39;s decision-making process. SHAP provides a coherent explanation of individual predictions by quantifying the impact of each feature on the model&#39;s output. By visualizing SHAP values, users gain insights into how different features influence the neural network&#39;s decisions, enhancing transparency and interpretability.\n\n3. NLP-Based Explanation Generation:\n\nTo further enhance the interpretability of the neural network&#39;s decisions, we leverage Natural Language Processing (NLP) techniques to generate human-readable explanations. By analyzing the learned representations and SHAP values, we extract key insights and transform them into intuitive explanations in natural language. These explanations provide users with actionable insights into the model&#39;s behavior, enabling informed decision-making.\n\nExpected Outcome:\n\nThrough our project, we aim to achieve the following outcomes:\n\nEnhanced Understanding: Provide users with a clear understanding of how neural networks operate, particularly in the context of time-series data analysis with multiple features.\nTransparency: Offer transparent insights into the decision-making process of the neural network, facilitating trust and confidence in its predictions.\nAccessibility: Make complex neural network models accessible to a wider audience by presenting explanations in a comprehensible and intuitive manner.\nPractical Utility: Enable stakeholders to make informed decisions based on the insights gleaned from the explainable AI techniques employed in the project.",
         "J": null,
         "K": null,
-        "L": null,
+        "L": "Deep Learning",
         "M": null,
         "N": null,
-        "O": null
+        "O": "Priyanshu Singh",
+        "P": "Sneha Kadambala",
+        "Q": "Shreyas Satre",
+        "R": "Atharva khangar",
+        "S": "Sangeeta Oswal",
+        "T": "Bhavana C"
     },
     {
         "__EMPTY": 18,
@@ -315,12 +400,17 @@
         "F": "Govind Tiwari",
         "G": "Amit Singh",
         "H": "Akansha P",
-        "I": null,
+        "I": "An ML model that compares a student answer and a model answer and gives the accuracy of how similar both annswers are. This can be used by teachers and by anyone who wants to automate the task of grading tests with descriptive answers. The user needs to input both the model answer and student answer either by typing them out or uploading their images. If images are uploaded the model will utilise the OCR functionality to extract the text from them and proceed ahead.",
         "J": null,
         "K": null,
-        "L": null,
+        "L": "NLP",
         "M": null,
         "N": null,
-        "O": null
+        "O": "Omkar Korade",
+        "P": "Muhammad Faayez",
+        "Q": "Harsh Rohra",
+        "R": "Govind Tiwari",
+        "S": "Amit Singh",
+        "T": "Akansha P"
     }
 ]
