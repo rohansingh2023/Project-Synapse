@@ -1,17 +1,17 @@
 {
-  "homepage": "https://rohansingh2023.github.io/BE-Projects-Showcase/",
+  "homepage": "https://rohansingh2023.github.io/Project-Synapse/",
   "name": "client",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist",
     "dev": "node src/scripts/excelToJson.js && vite",
     "build": "node src/scripts/excelToJson.js && tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "node src/scripts/excelToJson.js && vite preview",
-    "convert": "node src/utils/file-conversion/convert.js",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d dist"
+    "convert": "node src/utils/file-conversion/convert.js"
   },
   "dependencies": {
     "@types/validator": "^13.11.9",
