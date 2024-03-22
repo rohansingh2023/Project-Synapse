@@ -12,5 +12,6 @@ export const router = createBrowserRouter(
       <Route path="" element={<Home />} />
       <Route path="project/:projectId" element={<Project />} />
     </Route>
-  )
+  ),
+  { basename: "/Project-Synapse" }
 );
