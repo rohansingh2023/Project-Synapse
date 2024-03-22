@@ -40,9 +40,9 @@
         "N": null,
         "O": "Prasad Jawale",
         "P": "Anushka Kulkarni",
-        "Q": "subrato_tapaswi.jpeg",
+        "Q": "https://media.licdn.com/dms/image/C5603AQF2xxD2ZwXU-A/profile-displayphoto-shrink_200_200/0/1643320265523?e=2147483647&v=beta&t=Zglhi9Frgcq2MVhxV86XQIAHDOnp33keLNFNW3-uLMk",
         "R": "Lakshman Bhojwani",
-        "S": "Dr. Vijayalaxmi",
+        "S": null,
         "T": "Mamata C"
     },
     {
@@ -65,7 +65,7 @@
         "P": "Satyam Dubey",
         "Q": "Prathmesh Pawar",
         "R": "Yash Sarang",
-        "S": "Dr. Anjali Yeole",
+        "S": "https://vesit.ves.ac.in/storage/faculty/anjali_mam.jpg",
         "T": "Himanshi G"
     },
     {
@@ -88,7 +88,7 @@
         "P": "Ashish Gupta",
         "Q": "Abhijay Sharangdhar",
         "R": "Hrishikesh Kudale",
-        "S": "Sangeeta Oswal",
+        "S": "https://vesit.ves.ac.in/storage/faculty/1587730043Sangeeta%20Oswal.jpg",
         "T": "Bhavana C"
     },
     {
@@ -111,7 +111,7 @@
         "P": "Shubham Hadawle",
         "Q": "Pranav Kotkar",
         "R": "Om Bhatia",
-        "S": "Amit Singh",
+        "S": "https://vesit.ves.ac.in/storage/faculty/1586847238amitsingh.jpg",
         "T": "Akansha P"
     },
     {
@@ -134,7 +134,7 @@
         "P": "Sheryl Bellary",
         "Q": "Sheetal Dixit",
         "R": "Soham Jadiye",
-        "S": "Ajinkya W",
+        "S": "https://vesit.ves.ac.in/storage/faculty/1585259817Ajinkya%20V.jpg",
         "T": "Kusum K"
     },
     {
@@ -156,8 +156,8 @@
         "O": "Akshat Tiwari",
         "P": "Arya Kurup",
         "Q": "Rupesh Dhirwani",
-        "R": "Tejas Patne",
-        "S": "Dr. Vijayalaxmi",
+        "R": "https://media.licdn.com/dms/image/D4D03AQGJTp4t23B0kQ/profile-displayphoto-shrink_200_200/0/1711108637180?e=2147483647&v=beta&t=2ugzieM9eEfqdWJ8BkKa8yJy2_duw3vLHHuLBqYPsvE",
+        "S": null,
         "T": "Mamata C"
     },
     {
@@ -176,11 +176,11 @@
         "L": "Deep Learning",
         "M": null,
         "N": null,
-        "O": "Vemburaj Konar",
-        "P": "Mayur Pimpude",
-        "Q": "Heramb Pawar",
-        "R": "Deepak Prasad",
-        "S": "Dr. Anjali Yeole",
+        "O": "https://media.licdn.com/dms/image/D4D03AQHpbb7DZ0teyw/profile-displayphoto-shrink_400_400/0/1693139740090?e=1716422400&v=beta&t=Vz5dRLjSSAOSIoLINJd5Ei1C4cpcAIT3pQtD0ZYmb98",
+        "P": "https://media.licdn.com/dms/image/D5603AQHkUvL0yIjeMQ/profile-displayphoto-shrink_400_400/0/1690610996503?e=1716422400&v=beta&t=_qri5lB_rbdxWKkhmBFY15uJfaPdRfLlj643vUeddZw",
+        "Q": "https://media.licdn.com/dms/image/D4D35AQFxzBDdeex6iA/profile-framedphoto-shrink_400_400/0/1690345194603?e=1711717200&v=beta&t=gwmnfc5F8WjywvpcZOYAzqezMVq8gtAn2CN-V3G4Pgs",
+        "R": "https://media.licdn.com/dms/image/D4D35AQGDIzw635ii5g/profile-framedphoto-shrink_400_400/0/1673147093442?e=1711717200&v=beta&t=df1K4dVT1OWvIKDKSSR15WTwnTmjHUsPyK7s_nuga48",
+        "S": "https://vesit.ves.ac.in/storage/faculty/anjali_mam.jpg",
         "T": "Himanshi G"
     },
     {
@@ -203,7 +203,7 @@
         "P": "Yash pandey",
         "Q": "Gargi Khachane",
         "R": "Saransh Badlani",
-        "S": "Sangeeta Oswal",
+        "S": "https://vesit.ves.ac.in/storage/faculty/1587730043Sangeeta%20Oswal.jpg",
         "T": "Bhavana C"
     },
     {
@@ -226,7 +226,7 @@
         "P": "Om Gaydhane",
         "Q": "Janhavi Khanvilkar",
         "R": "Kshitij Shidore",
-        "S": "Amit Singh",
+        "S": "https://vesit.ves.ac.in/storage/faculty/1586847238amitsingh.jpg",
         "T": "Akansha P"
     },
     {
@@ -249,7 +249,7 @@
         "P": "Arnav Singhal",
         "Q": "Manvi Gour",
         "R": "Jayesh Agrawal",
-        "S": "Ajinkya W",
+        "S": "https://vesit.ves.ac.in/storage/faculty/1585259817Ajinkya%20V.jpg",
         "T": "Kusum K"
     },
     {
@@ -272,7 +272,7 @@
         "P": "Akshiti K.",
         "Q": "Surabhi Tambe",
         "R": null,
-        "S": "Dr. Vijayalaxmi",
+        "S": null,
         "T": "Mamata C"
     },
     {
@@ -293,9 +293,9 @@
         "N": null,
         "O": "Surya Ganiga",
         "P": "Nimisha Jain",
-        "Q": "Rohan Singh",
+        "Q": "https://media.licdn.com/dms/image/C4D03AQGhdMNK7z3hzw/profile-displayphoto-shrink_200_200/0/1663418927746?e=2147483647&v=beta&t=gnroc__ub3_LuLAVYP944-LL9b8FRyRbEQ2MjZtOrBo",
         "R": null,
-        "S": "Dr. Anjali Yeole",
+        "S": "https://vesit.ves.ac.in/storage/faculty/anjali_mam.jpg",
         "T": "Himanshi G"
     },
     {
@@ -318,7 +318,7 @@
         "P": "Himanshu Sharma",
         "Q": "Avanish Srivastava",
         "R": "Shambhu Patil",
-        "S": "Sangeeta Oswal",
+        "S": "https://vesit.ves.ac.in/storage/faculty/1587730043Sangeeta%20Oswal.jpg",
         "T": "Bhavana C"
     },
     {
@@ -341,7 +341,7 @@
         "P": "Madhusudana Naidu",
         "Q": "Manav Pahilwani",
         "R": "Shreya Singh",
-        "S": "Ajinkya W",
+        "S": "https://vesit.ves.ac.in/storage/faculty/1585259817Ajinkya%20V.jpg",
         "T": "Kusum K"
     },
     {
@@ -364,7 +364,7 @@
         "P": "Mahindra Chetwani",
         "Q": "Manas Lalwani",
         "R": "Parth Suryavanshi",
-        "S": "Dr. Anjali Yeole",
+        "S": "https://vesit.ves.ac.in/storage/faculty/anjali_mam.jpg",
         "T": "Himanshi G"
     },
     {
@@ -387,7 +387,7 @@
         "P": "Sneha Kadambala",
         "Q": "Shreyas Satre",
         "R": "Atharva khangar",
-        "S": "Sangeeta Oswal",
+        "S": "https://vesit.ves.ac.in/storage/faculty/1587730043Sangeeta%20Oswal.jpg",
         "T": "Bhavana C"
     },
     {
@@ -410,7 +410,7 @@
         "P": "Muhammad Faayez",
         "Q": "Harsh Rohra",
         "R": "Govind Tiwari",
-        "S": "Amit Singh",
+        "S": "https://vesit.ves.ac.in/storage/faculty/1586847238amitsingh.jpg",
         "T": "Akansha P"
     }
 ]

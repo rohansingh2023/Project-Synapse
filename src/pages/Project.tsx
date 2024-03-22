@@ -13,6 +13,9 @@ interface ProjectInfo {
   "GitHub Link": string;
   "Demo Video Link": string;
   "Project Domain": string;
+  "Photos": string[];
+  "Guide Photo": string;
+  "Co-guide Photo": string; 
 }
 
 export default function Project() {
@@ -35,7 +38,10 @@ export default function Project() {
                   "Project Description": "Project Description (300-700 words)", 
                   "GitHub Link": "GitHub Link", 
                   "Demo Video Link": "", 
-                  "Project Domain":"Project Domain"
+                  "Project Domain":"Project Domain",
+                  "Photos": [], 
+                  "Guide Photo": "",
+                  "Co-guide Photo": "", 
                 };
   if(projectData !== undefined) projectInfo = {
     "Group No.": projectData["A"] as number,
@@ -46,7 +52,10 @@ export default function Project() {
     "Project Description": projectData["I"] as string, 
     "GitHub Link": projectData["J"] as string, 
     "Demo Video Link": projectData["K"] as string, 
-    "Project Domain":projectData["L"] as string
+    "Project Domain":projectData["L"] as string,
+    "Photos": [projectData["O"], projectData["P"], projectData["Q"], projectData["R"] as string], 
+    "Guide Photo": projectData["S"] as string,
+    "Co-guide Photo": projectData["T"] as string, 
   };
   let teamInfo: string[] = ["temp"];
   const teamMentors = [projectInfo?.['Guide'], projectInfo?.["Co-guide"]];
@@ -57,6 +66,16 @@ export default function Project() {
   }
   if(teamMembers !== undefined){
     teamInfo.push(...teamMembers);
+  }
+  let teamPhotos: string[] = ["temp"];
+  const mentorsPhoto = [projectInfo?.["Guide Photo"], projectInfo?.["Co-guide Photo"]];
+  const membersPhoto = projectInfo["Photos"];
+  if(mentorsPhoto !== undefined){
+    teamPhotos.pop();
+    teamPhotos.push(...mentorsPhoto);
+  }
+  if(membersPhoto !== undefined){
+    teamPhotos.push(...membersPhoto);
   }
   
   return (
@@ -89,7 +108,7 @@ export default function Project() {
           </a>
         </div>
       </div>
-      <Team team={teamInfo} />
+      <Team team={teamInfo} photos={teamPhotos} />
     </div>
   );
 }
